@@ -62,7 +62,7 @@ which icc
 Next, replace the following path in the setenv command below to use the path to your CC compiler
 
 ```
-setenv CC /urs/local/apps/intel/18.2/bin/icc
+setenv CC "/urs/local/apps/intel/18.2/bin/icc"
 ```
 
 Find the path to the Fortran compiler on your ssystem using the which command
@@ -71,7 +71,7 @@ which ifort
 ```
 Next, replace the following path in the setenv command below to use the path to the Fortran compiler on your system
 ```
-setenv FC /urs/local/apps/intel/18.2/bin/ifort
+setenv FC "/urs/local/apps/intel/18.2/bin/ifort"
 ```
 
 Find the path to the CXX compiler on your system using the which command
@@ -80,7 +80,7 @@ which icpc
 ```
 Next, replace the following path in the setenv command below to use the path to the CXX compiler on your system:
 ```
-setenv CXX /urs/local/apps/intel/18.2/bin/icpc
+setenv CXX "/urs/local/apps/intel/18.2/bin/icpc"
 ```
 
 10. Run the configure command
@@ -143,7 +143,7 @@ which icc
 ```
 Next, replace the following path in the setenv command below to use the path to your CC compiler
 ```
-setenv CC /urs/local/apps/intel/18.2/bin/icc
+setenv CC "/urs/local/apps/intel/18.2/bin/icc"
 ```
 Find the path to the Fortran compiler on your ssystem using the which command
 ```
@@ -151,7 +151,7 @@ which ifort
 ```
 Next, replace the following path in the setenv command below to use the path to the Fortran compiler on your system
 ```
-setenv FC /urs/local/apps/intel/18.2/bin/ifort
+setenv FC "/urs/local/apps/intel/18.2/bin/ifort"
 ```
 Find the path to the CXX compiler on your system using the which command
 ```
@@ -159,13 +159,13 @@ which icpc
 ```
 Next, replace the following path in the setenv command below to use the path to the CXX compiler on your system:
 ```
-setenv CXX /urs/local/apps/intel/18.2/bin/icpc
+setenv CXX "/urs/local/apps/intel/18.2/bin/icpc"
 ```
 
 8. Set your LD_LIBRARY_PATH to include the netcdf-C library path for netCDF build
 
 ```
-setenv NCDIR /home/netcdf-c-4.7.0-intel18.2
+setenv NCDIR "/home/netcdf-c-4.7.0-intel18.2"
 setenv LD_LIBRARY_PATH ${NCDIR}/lib:${LD_LIBRARY_PATH}
 ```
 
@@ -178,7 +178,7 @@ echo $LD_LIBRARY_PATH
 10. Set the install directory for netCDF fortran
 
 ```
-setenv NFDIR /home/netcdf-fortran-4.4.5-intel18.2
+setenv NFDIR "/home/netcdf-fortran-4.4.5-intel18.2"
 setenv CPPFLAGS -I${NCDIR}/include
 setenv LDFLAGS -L${NCDIR}/lib
 ```
@@ -302,8 +302,8 @@ mkdir $BIN
 
 ```
 cd $BIN
-ln -s /home/netcdf-c-4.7.0-intel18.2/libnetcdff.a
-ln -s /home/netcdf-fortran-4.4.5-intel18.2/libnetcdf.a
+ln -s /home/netcdf-c-4.7.0-intel18.2/libnetcdf.a
+ln -s /home/netcdf-fortran-4.4.5-intel18.2/libnetcdff.a
 ```
 
 9. Run the make command to compile and link the ioapi library
